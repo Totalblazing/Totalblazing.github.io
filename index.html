@@ -15,12 +15,8 @@
    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
    crossorigin=""></script>
    <script>
-var mymap = L.map('mapid').setView([0, 0], 0);
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoidG90YWxibGF6aW5nIiwiYSI6ImNqaTVsejB3eTBsY2IzcG1qMHFobzI3NGIifQ.aRrdrXtHJQKm_KnTMOOVhw'
+var mymap = L.map('mapid').setView([1, 1], 1);
+L.tileLayer('file:///E:/Github.io/Totalblazing.github.io/tiles/{z}/{x}/{y}.png', {
 }).addTo(mymap);
 </script>
 </body>
